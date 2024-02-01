@@ -8,18 +8,24 @@ body{
     color: white;
     margin: 0px;
 }
+.img-mobile{
+    text-align: center;
+    align-items: center;
+    display: none;
+}
 .container{
     display: flex;    
     max-width: 100%;
     height: 95vh;
     align-items: center;
     justify-content: center;
-    
+    padding: 0px 20px;
     
     
 }
 
 .info{
+    display: block;
     max-width: 900px;
     
 }
@@ -51,4 +57,23 @@ footer span{
 footer span a{
     font-size: 20px;
     font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 780px) {
+body{
+    width: 100%;
+    height: auto;
+}
+.container{
+    display: block;
+    height: auto;
+}
+.img-desktop{
+    display:none;
+}   
+.img-mobile{
+    display: block;
+    width: 100% ;
+}
 }
